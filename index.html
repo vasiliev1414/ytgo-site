@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YTGO — Свободный доступ к YouTube в 4K</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            accent: '#FF4444',
+            'accent-hover': '#FF6B6B',
+            surface: '#1a1a1f',
+            'surface-elevated': '#222228',
+          },
+          fontFamily: {
+            sans: ['Manrope', 'system-ui', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+        },
+      },
+    }
+  </script>
+  <style>
+    .gradient-text {
+      background: linear-gradient(135deg, #FF4444 0%, #FF8A65 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .card-glow {
+      box-shadow: 0 0 40px -10px rgba(255, 68, 68, 0.2);
+    }
+  </style>
+</head>
+<body class="bg-[#0f0f12] text-gray-100 font-sans antialiased min-h-screen">
+  <!-- Hero -->
+  <main class="max-w-4xl mx-auto px-6 py-20 md:py-32">
+    <div class="text-center space-y-8">
+      <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-surface-elevated border border-gray-800 text-sm text-gray-400">
+        <span class="w-2 h-2 rounded-full bg-accent animate-pulse"></span>
+        Браузерное расширение
+      </div>
+      <h1 class="text-4xl md:text-6xl font-bold tracking-tight">
+        <span class="gradient-text">YTGO</span>
+        <span class="text-white"> — Свободный доступ к YouTube в 4K</span>
+      </h1>
+      <p class="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed">
+        Браузерное расширение для стабильного доступа к видеохостингам на высокой скорости
+      </p>
+      <a href="#download" class="inline-flex items-center gap-2 px-8 py-4 bg-accent hover:bg-accent-hover text-white font-semibold rounded-xl transition-colors duration-200 shadow-lg hover:shadow-accent/25">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+        </svg>
+        Скачать расширение
+      </a>
+    </div>
+
+    <!-- Pricing -->
+    <section id="download" class="mt-24 md:mt-32">
+      <h2 class="text-2xl font-semibold text-center text-gray-300 mb-8">Премиум доступ</h2>
+      <div class="max-w-sm mx-auto">
+        <div class="bg-surface-elevated border border-gray-800 rounded-2xl p-8 card-glow hover:border-gray-700 transition-colors">
+          <div class="flex items-baseline gap-2 mb-6">
+            <span class="text-4xl font-bold text-white">77</span>
+            <span class="text-gray-400">₽/мес</span>
+          </div>
+          <ul class="space-y-3 text-gray-400 mb-8">
+            <li class="flex items-center gap-2">
+              <svg class="w-5 h-5 text-accent flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+              Неограниченная скорость
+            </li>
+            <li class="flex items-center gap-2">
+              <svg class="w-5 h-5 text-accent flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+              Качество до 4K
+            </li>
+            <li class="flex items-center gap-2">
+              <svg class="w-5 h-5 text-accent flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+              Стабильная работа
+            </li>
+          </ul>
+          <button class="w-full py-3 px-6 bg-accent hover:bg-accent-hover text-white font-medium rounded-xl transition-colors">
+            Оформить подписку
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-gray-800 mt-24">
+    <div class="max-w-4xl mx-auto px-6 py-12">
+      <div class="text-sm text-gray-500 space-y-4">
+        <p>
+          Россия, г. Новочебоксарск, ул. Южная 9, кв. 9
+        </p>
+        <p>
+          Самозанятый Васильев Алексей Александрович, ИНН 213004804722
+        </p>
+        <p>
+          Email для связи: <a href="mailto:support@ytgo.su" class="text-accent hover:text-accent-hover transition-colors">support@ytgo.su</a>
+        </p>
+        <div class="flex flex-wrap gap-4 pt-4">
+          <a href="/privacy" class="text-gray-400 hover:text-white transition-colors">Политика конфиденциальности</a>
+          <a href="/terms" class="text-gray-400 hover:text-white transition-colors">Пользовательское соглашение</a>
+          <a href="/refund" class="text-gray-400 hover:text-white transition-colors">Условия оплаты и возврата</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
