@@ -215,8 +215,8 @@
           Получайте 10% от каждой оплаты приглашенного пользователя на ваш бонусный баланс в течение 1 года. Бонусы можно использовать для оплаты собственной подписки.
         </p>
         <div class="flex flex-col sm:flex-row gap-3 max-w-lg mx-auto">
-          <input type="text" readonly value="ytgo.su/join?ref=user123" class="flex-1 px-4 py-3 bg-[#121214] border border-gray-700 rounded-xl text-gray-300 font-mono text-sm focus:outline-none focus:ring-2 focus:ring-[#FF4444]/50" id="ref-link" />
-          <button type="button" id="ref-copy-btn" class="px-6 py-3 bg-[#FF4444] hover:bg-[#FF6B6B] text-white font-medium rounded-xl transition-colors whitespace-nowrap">
+          <input type="text" readonly value="https://ytgo.su/join?ref=user123" class="flex-1 px-4 py-3 bg-[#121214] border border-gray-700 rounded-xl text-gray-300 font-mono text-sm focus:outline-none focus:ring-2 focus:ring-[#FF4444]/50" id="ref-link" />
+          <button type="button" id="ref-copy-btn" onclick="copyRefLink()" class="px-6 py-3 bg-[#FF4444] hover:bg-[#FF6B6B] text-white font-medium rounded-xl transition-colors whitespace-nowrap">
             Копировать
           </button>
         </div>
@@ -242,20 +242,18 @@
   </footer>
 
   <script>
-    (function () {
-      var btn = document.getElementById('ref-copy-btn');
+    function copyRefLink() {
       var input = document.getElementById('ref-link');
-      if (!btn || !input) return;
-      btn.addEventListener('click', function () {
-        var text = input.value;
-        navigator.clipboard.writeText(text).then(function () {
-          btn.textContent = 'Скопировано!';
-          setTimeout(function () {
-            btn.textContent = 'Копировать';
-          }, 2000);
-        });
+      var btn = document.getElementById('ref-copy-btn');
+      if (!input || !btn) return;
+      var linkText = input.value;
+      navigator.clipboard.writeText(linkText).then(function () {
+        btn.textContent = 'Готово!';
+        setTimeout(function () {
+          btn.textContent = 'Копировать';
+        }, 2000);
       });
-    })();
+    }
   </script>
 </body>
 </html>
