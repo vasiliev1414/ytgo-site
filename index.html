@@ -38,12 +38,12 @@
     }
   </style>
 </head>
-<body class="bg-[#0f0f12] text-gray-100 font-sans antialiased min-h-screen">
+<body class="bg-[#121214] text-gray-100 font-sans antialiased min-h-screen">
   <!-- Hero -->
-  <main class="max-w-4xl mx-auto px-6 py-20 md:py-32">
+  <main class="max-w-7xl mx-auto px-6 py-20 md:py-32">
     <div class="text-center space-y-8">
-      <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-surface-elevated border border-gray-800 text-sm text-gray-400">
-        <span class="w-2 h-2 rounded-full bg-accent animate-pulse"></span>
+      <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#1a1a1f] border border-gray-800 text-sm text-gray-400">
+        <span class="w-2 h-2 rounded-full bg-[#FF4444] animate-pulse"></span>
         Браузерное расширение
       </div>
       <h1 class="text-4xl md:text-6xl font-bold tracking-tight">
@@ -53,7 +53,7 @@
       <p class="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed">
         Браузерное расширение для стабильного доступа к видеохостингам на высокой скорости
       </p>
-      <a href="#download" class="inline-flex items-center gap-2 px-8 py-4 bg-accent hover:bg-accent-hover text-white font-semibold rounded-xl transition-colors duration-200 shadow-lg hover:shadow-accent/25">
+      <a href="#download" class="inline-flex items-center gap-2 px-8 py-4 bg-[#FF4444] hover:bg-[#FF6B6B] text-white font-semibold rounded-xl transition-colors duration-200 shadow-lg hover:shadow-[#FF4444]/25">
         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
         </svg>
@@ -63,35 +63,157 @@
 
     <!-- Pricing -->
     <section id="download" class="mt-24 md:mt-32">
-      <h2 class="text-2xl font-semibold text-center text-gray-300 mb-8">Премиум доступ</h2>
-      <div class="max-w-sm mx-auto">
-        <div class="bg-surface-elevated border border-gray-800 rounded-2xl p-8 card-glow hover:border-gray-700 transition-colors">
-          <div class="flex items-baseline gap-2 mb-6">
-            <span class="text-4xl font-bold text-white">77</span>
-            <span class="text-gray-400">₽/мес</span>
+      <h2 class="text-2xl font-semibold text-center text-gray-300 mb-10">Премиум доступ</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-6 gap-4">
+        <!-- Посуточный -->
+        <div class="flex flex-col h-full bg-[#1a1a1f] border border-gray-800 rounded-2xl p-6 hover:border-gray-700 transition-colors">
+          <h3 class="text-lg font-semibold text-white mb-1">Посуточный</h3>
+          <div class="flex items-baseline gap-1 mb-4">
+            <span class="text-2xl font-bold text-white">5</span>
+            <span class="text-gray-400">₽ / день</span>
           </div>
-          <ul class="space-y-3 text-gray-400 mb-8">
+          <ul class="space-y-2 text-gray-400 text-sm flex-grow">
             <li class="flex items-center gap-2">
-              <svg class="w-5 h-5 text-accent flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-              </svg>
-              Неограниченная скорость
+              <svg class="w-4 h-4 text-gray-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Качество до 1080p
             </li>
             <li class="flex items-center gap-2">
-              <svg class="w-5 h-5 text-accent flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-              </svg>
-              Качество до 4K
-            </li>
-            <li class="flex items-center gap-2">
-              <svg class="w-5 h-5 text-accent flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-              </svg>
-              Стабильная работа
+              <svg class="w-4 h-4 text-gray-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              2 сайта клиента
             </li>
           </ul>
-          <button class="w-full py-3 px-6 bg-accent hover:bg-accent-hover text-white font-medium rounded-xl transition-colors">
-            Оформить подписку
+          <button class="w-full mt-auto py-3 px-4 bg-gray-600 hover:bg-gray-500 text-white font-medium rounded-xl transition-colors text-sm">Выбрать</button>
+        </div>
+
+        <!-- Пробный -->
+        <div class="flex flex-col h-full bg-[#1a1a1f] border border-gray-800 rounded-2xl p-6 hover:border-gray-700 transition-colors">
+          <h3 class="text-lg font-semibold mb-1" style="color: #FF4444;">Пробный</h3>
+          <div class="flex items-baseline gap-1 mb-4">
+            <span class="text-2xl font-bold text-white">0</span>
+            <span class="text-gray-400">₽ / 14 дней</span>
+          </div>
+          <ul class="space-y-2 text-gray-400 text-sm flex-grow">
+            <li class="flex items-center gap-2">
+              <svg class="w-4 h-4 text-gray-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Качество до 720p
+            </li>
+            <li class="flex items-center gap-2">
+              <svg class="w-4 h-4 text-gray-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              2 сайта клиента
+            </li>
+          </ul>
+          <button class="w-full mt-auto py-3 px-4 bg-gray-600 hover:bg-gray-500 text-white font-medium rounded-xl transition-colors text-sm">Попробовать</button>
+        </div>
+
+        <!-- 1 месяц -->
+        <div class="flex flex-col h-full bg-[#1a1a1f] border border-gray-800 rounded-2xl p-6 hover:border-gray-700 transition-colors">
+          <h3 class="text-lg font-semibold text-white mb-1">1 месяц</h3>
+          <div class="flex items-baseline gap-1 mb-1">
+            <span class="text-2xl font-bold text-white">100</span>
+            <span class="text-gray-400">₽</span>
+          </div>
+          <p class="text-xs text-[#FF4444] font-medium mb-4">Выгода 33%</p>
+          <ul class="space-y-2 text-gray-400 text-sm flex-grow">
+            <li class="flex items-center gap-2">
+              <svg class="w-4 h-4 text-[#FF4444] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Качество 4K HDR
+            </li>
+            <li class="flex items-center gap-2">
+              <svg class="w-4 h-4 text-[#FF4444] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              10 сайтов клиента
+            </li>
+          </ul>
+          <button class="w-full mt-auto py-3 px-4 bg-[#FF4444] hover:bg-[#FF6B6B] text-white font-medium rounded-xl transition-colors text-sm">Выбрать</button>
+        </div>
+
+        <!-- 3 месяца (ХИТ) -->
+        <div class="flex flex-col h-full bg-[#1a1a1f] border-2 border-[#FF4444] rounded-2xl p-6 relative hover:border-[#FF6B6B] transition-colors">
+          <span class="absolute -top-2.5 left-1/2 -translate-x-1/2 px-3 py-0.5 bg-[#FF4444] text-white text-xs font-bold rounded-full">ХИТ</span>
+          <h3 class="text-lg font-semibold text-white mb-1 mt-1">3 месяца</h3>
+          <div class="flex items-baseline gap-1 mb-1">
+            <span class="text-2xl font-bold text-white">249</span>
+            <span class="text-gray-400">₽</span>
+          </div>
+          <p class="text-xs text-[#FF4444] font-medium mb-4">Выгода 45%</p>
+          <ul class="space-y-2 text-gray-400 text-sm flex-grow">
+            <li class="flex items-center gap-2">
+              <svg class="w-4 h-4 text-[#FF4444] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              +5 пользователей
+            </li>
+            <li class="flex items-center gap-2">
+              <svg class="w-4 h-4 text-[#FF4444] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Качество 4K HDR
+            </li>
+            <li class="flex items-center gap-2">
+              <svg class="w-4 h-4 text-[#FF4444] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              10 сайтов клиента
+            </li>
+          </ul>
+          <button class="w-full mt-auto py-3 px-4 bg-[#FF4444] hover:bg-[#FF6B6B] text-white font-medium rounded-xl transition-colors text-sm">Выбрать</button>
+        </div>
+
+        <!-- 6 месяцев -->
+        <div class="flex flex-col h-full bg-[#1a1a1f] border border-gray-800 rounded-2xl p-6 hover:border-gray-700 transition-colors">
+          <h3 class="text-lg font-semibold text-white mb-1">6 месяцев</h3>
+          <div class="flex items-baseline gap-1 mb-1">
+            <span class="text-2xl font-bold text-white">399</span>
+            <span class="text-gray-400">₽</span>
+          </div>
+          <p class="text-xs text-[#FF4444] font-medium mb-4">Выгода 55%</p>
+          <ul class="space-y-2 text-gray-400 text-sm flex-grow">
+            <li class="flex items-center gap-2">
+              <svg class="w-4 h-4 text-[#FF4444] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              +5 пользователей
+            </li>
+            <li class="flex items-center gap-2">
+              <svg class="w-4 h-4 text-[#FF4444] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Качество 4K HDR
+            </li>
+            <li class="flex items-center gap-2">
+              <svg class="w-4 h-4 text-[#FF4444] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              10 сайтов клиента
+            </li>
+          </ul>
+          <button class="w-full mt-auto py-3 px-4 bg-[#FF4444] hover:bg-[#FF6B6B] text-white font-medium rounded-xl transition-colors text-sm">Выбрать</button>
+        </div>
+
+        <!-- 12 месяцев (MAX) -->
+        <div class="flex flex-col h-full bg-[#1a1a1f] border-2 border-indigo-500 rounded-2xl p-6 hover:border-indigo-400 transition-colors">
+          <h3 class="text-lg font-semibold text-white mb-1">12 месяцев</h3>
+          <span class="inline-flex self-start px-2 py-0.5 bg-indigo-500/20 text-indigo-400 text-xs font-bold rounded mb-2">MAX</span>
+          <div class="flex items-baseline gap-1 mb-1">
+            <span class="text-2xl font-bold text-white">699</span>
+            <span class="text-gray-400">₽</span>
+          </div>
+          <p class="text-xs text-indigo-400 font-medium mb-4">Выгода 62%</p>
+          <ul class="space-y-2 text-gray-400 text-sm flex-grow">
+            <li class="flex items-center gap-2">
+              <svg class="w-4 h-4 text-indigo-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              +5 пользователей
+            </li>
+            <li class="flex items-center gap-2">
+              <svg class="w-4 h-4 text-indigo-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              4K HDR
+            </li>
+            <li class="flex items-center gap-2">
+              <svg class="w-4 h-4 text-indigo-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              VIP поддержка
+            </li>
+          </ul>
+          <button class="w-full mt-auto py-3 px-4 bg-[#FF4444] hover:bg-[#FF6B6B] text-white font-medium rounded-xl transition-colors text-sm">Выбрать</button>
+        </div>
+      </div>
+
+      <!-- Реферальная программа -->
+      <div class="mt-16 rounded-2xl p-8 md:p-10" style="background-color: #1a1a1f;">
+        <h3 class="text-xl font-semibold text-white text-center mb-4">Приглашайте друзей — пользуйтесь бесплатно!</h3>
+        <p class="text-gray-400 text-center max-w-2xl mx-auto mb-6 leading-relaxed">
+          Получайте 10% от каждой оплаты приглашенного пользователя на ваш бонусный баланс в течение 1 года. Бонусы можно использовать для оплаты собственной подписки.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-3 max-w-lg mx-auto">
+          <input type="text" readonly value="ytgo.su/join?ref=user123" class="flex-1 px-4 py-3 bg-[#121214] border border-gray-700 rounded-xl text-gray-300 font-mono text-sm focus:outline-none focus:ring-2 focus:ring-[#FF4444]/50" id="ref-link" />
+          <button type="button" onclick="navigator.clipboard.writeText(document.getElementById('ref-link').value).then(() => this.textContent = 'Скопировано!').then(() => setTimeout(() => this.textContent = 'Копировать', 2000))" class="px-6 py-3 bg-[#FF4444] hover:bg-[#FF6B6B] text-white font-medium rounded-xl transition-colors whitespace-nowrap">
+            Копировать
           </button>
         </div>
       </div>
@@ -99,8 +221,8 @@
   </main>
 
   <!-- Footer -->
-  <footer class="border-t border-gray-800 mt-24">
-    <div class="max-w-4xl mx-auto px-6 py-12">
+  <footer class="border-t border-gray-800 mt-24 bg-[#121214]">
+    <div class="max-w-7xl mx-auto px-6 py-12">
       <div class="text-sm text-gray-500 space-y-4">
         <p>
           Россия, г. Новочебоксарск, ул. Южная 9, кв. 9
@@ -109,12 +231,12 @@
           Самозанятый Васильев Алексей Александрович, ИНН 213004804722
         </p>
         <p>
-          Email для связи: <a href="mailto:support@ytgo.su" class="text-accent hover:text-accent-hover transition-colors">support@ytgo.su</a>
+          Email для связи: <a href="mailto:support@ytgo.su" class="text-[#FF4444] hover:text-[#FF6B6B] transition-colors">support@ytgo.su</a>
         </p>
         <div class="flex flex-wrap gap-4 pt-4">
-          <a href="/privacy" class="text-gray-400 hover:text-white transition-colors">Политика конфиденциальности</a>
-          <a href="/terms" class="text-gray-400 hover:text-white transition-colors">Пользовательское соглашение</a>
-          <a href="/refund" class="text-gray-400 hover:text-white transition-colors">Условия оплаты и возврата</a>
+          <a href="privacy.html" class="text-gray-400 hover:text-white transition-colors">Политика конфиденциальности</a>
+          <a href="terms.html" class="text-gray-400 hover:text-white transition-colors">Пользовательское соглашение</a>
+          <a href="refund.html" class="text-gray-400 hover:text-white transition-colors">Условия оплаты и возврата</a>
         </div>
       </div>
     </div>
