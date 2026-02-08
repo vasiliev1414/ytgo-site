@@ -212,7 +212,7 @@
         </p>
         <div class="flex flex-col sm:flex-row gap-3 max-w-lg mx-auto">
           <input type="text" readonly value="ytgo.su/join?ref=user123" class="flex-1 px-4 py-3 bg-[#121214] border border-gray-700 rounded-xl text-gray-300 font-mono text-sm focus:outline-none focus:ring-2 focus:ring-[#FF4444]/50" id="ref-link" />
-          <button type="button" onclick="navigator.clipboard.writeText(document.getElementById('ref-link').value).then(() => this.textContent = 'Скопировано!').then(() => setTimeout(() => this.textContent = 'Копировать', 2000))" class="px-6 py-3 bg-[#FF4444] hover:bg-[#FF6B6B] text-white font-medium rounded-xl transition-colors whitespace-nowrap">
+          <button type="button" id="ref-copy-btn" class="px-6 py-3 bg-[#FF4444] hover:bg-[#FF6B6B] text-white font-medium rounded-xl transition-colors whitespace-nowrap">
             Копировать
           </button>
         </div>
@@ -236,5 +236,22 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    (function () {
+      var btn = document.getElementById('ref-copy-btn');
+      var input = document.getElementById('ref-link');
+      if (!btn || !input) return;
+      btn.addEventListener('click', function () {
+        var text = input.value;
+        navigator.clipboard.writeText(text).then(function () {
+          btn.textContent = 'Скопировано!';
+          setTimeout(function () {
+            btn.textContent = 'Копировать';
+          }, 2000);
+        });
+      });
+    })();
+  </script>
 </body>
 </html>
