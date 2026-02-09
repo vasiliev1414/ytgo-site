@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Оплата прошла успешно — YTGO</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            accent: '#FF4444',
+            'accent-hover': '#FF6B6B',
+          },
+          fontFamily: {
+            sans: ['Manrope', 'system-ui', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+        },
+      },
+    }
+  </script>
+  <style>
+    .logo-text {
+      letter-spacing: 0.12em;
+    }
+  </style>
+</head>
+<body class="bg-[#121214] text-gray-100 font-sans antialiased min-h-screen">
+  <div class="min-h-screen flex items-center justify-center px-6">
+    <div class="max-w-lg w-full bg-[#1a1a1f] border border-gray-800 rounded-2xl p-8 md:p-10 shadow-xl shadow-black/40 text-center space-y-6">
+      <div class="inline-flex items-center justify-center px-5 py-2 rounded-full bg-black/40 border border-red-500/40 mb-1">
+        <span class="logo-text text-sm font-mono font-semibold text-[#FF4444]">YTGO</span>
+      </div>
+      <h1 class="text-2xl md:text-3xl font-bold text-white">Оплата прошла успешно!</h1>
+      <p class="text-sm md:text-base text-gray-400 leading-relaxed">
+        Теперь вам доступен полный функционал YTGO. Если расширение не активировалось автоматически, пожалуйста,
+        перезагрузите браузер или напишите в поддержку
+        <a href="https://t.me/ytgo_support" class="text-accent hover:text-accent-hover transition-colors">@ytgo_support</a>.
+      </p>
+      <div class="pt-2">
+        <a href="index.html" class="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-accent hover:bg-accent-hover text-white text-sm font-semibold transition-colors">
+          Вернуться на главную
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
