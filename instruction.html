@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Инструкция по установке YTGO</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            accent: '#FF4444',
+            'accent-hover': '#FF6B6B',
+          },
+          fontFamily: {
+            sans: ['Manrope', 'system-ui', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+        },
+      },
+    }
+  </script>
+  <style>
+    .logo-text {
+      letter-spacing: 0.12em;
+    }
+  </style>
+</head>
+<body class="bg-[#121214] text-gray-100 font-sans antialiased min-h-screen">
+  <div class="min-h-screen flex items-center justify-center px-6 py-8">
+    <div class="max-w-2xl w-full bg-[#1a1a1f] border border-gray-800 rounded-2xl p-8 md:p-10 shadow-xl shadow-black/40">
+      <div class="flex items-center justify-between gap-4 mb-6">
+        <div class="inline-flex items-center px-4 py-1.5 rounded-full bg-black/40 border border-red-500/40">
+          <span class="logo-text text-sm font-mono font-semibold text-[#FF4444]">YTGO</span>
+        </div>
+        <a href="index.html" class="text-xs text-gray-500 hover:text-gray-300 transition-colors">На главную</a>
+      </div>
+
+      <h1 class="text-2xl md:text-3xl font-bold text-white mb-6">Инструкция по установке YTGO</h1>
+
+      <div class="space-y-3 text-sm md:text-base text-gray-300">
+        <p>1. Распакуйте скачанный архив <span class="font-mono text-gray-100">ytgo_extension.zip</span>.</p>
+        <p>2. Откройте браузер Chrome и перейдите в раздел Расширения (<span class="font-mono text-gray-100">chrome://extensions/</span>).</p>
+        <p>3. Включите «Режим разработчика» в правом верхнем углу.</p>
+        <p>4. Нажмите кнопку «Загрузить распакованное расширение» и выберите папку из шага 1.</p>
+        <p>5. Для проверки Premium-функций используйте тестовый логин: <span class="font-mono text-gray-100">test@ytgo.su</span> / пароль: <span class="font-mono text-gray-100">robopass2026</span>.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+

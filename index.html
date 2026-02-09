@@ -57,7 +57,7 @@
       <p class="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed">
         Браузерное расширение для стабильного доступа к видеохостингам на высокой скорости
       </p>
-      <a href="#download" class="inline-flex items-center gap-2 px-8 py-4 bg-[#FF4444] hover:bg-[#FF6B6B] text-white font-semibold rounded-xl transition-colors duration-200 shadow-lg hover:shadow-[#FF4444]/25">
+      <a id="download-btn" href="/downloads/ytgo_extension.zip" download class="inline-flex items-center gap-2 px-8 py-4 bg-[#FF4444] hover:bg-[#FF6B6B] text-white font-semibold rounded-xl transition-colors duration-200 shadow-lg hover:shadow-[#FF4444]/25">
         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
         </svg>
@@ -276,6 +276,16 @@
         }, 2000);
       });
     }
+
+    (function () {
+      var downloadBtn = document.getElementById('download-btn');
+      if (!downloadBtn) return;
+      downloadBtn.addEventListener('click', function () {
+        setTimeout(function () {
+          window.location.href = 'instruction.html';
+        }, 1000);
+      });
+    })();
   </script>
 </body>
 </html>
