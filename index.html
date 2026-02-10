@@ -63,12 +63,37 @@
         </svg>
         Скачать расширение
       </a>
+      <div class="flex justify-center mt-4">
+        <button id="login-btn" class="inline-flex items-center gap-2 px-6 py-3 bg-[#1a1a1f] border border-gray-700 hover:border-gray-500 text-gray-100 text-sm font-medium rounded-xl transition-colors">
+          <span>Войти через Google</span>
+        </button>
+      </div>
     </div>
 
     <!-- Pricing -->
     <section id="download" class="mt-24 md:mt-32">
       <h2 class="text-2xl font-semibold text-center text-gray-300 mb-10">Премиум доступ</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-6 gap-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4">
+        <!-- Пробный -->
+        <div class="flex flex-col h-full bg-[#1a1a1f] border border-gray-800 rounded-2xl p-6 hover:border-gray-700 transition-colors">
+          <h3 class="text-lg font-semibold mb-1" style="color: #FF4444;">Пробный</h3>
+          <div class="flex items-baseline gap-1 mb-4">
+            <span class="text-2xl font-bold text-white">0</span>
+            <span class="text-gray-400">₽ / 7 дней</span>
+          </div>
+          <ul class="space-y-2 text-gray-400 text-sm flex-grow">
+            <li class="flex items-center gap-2">
+              <svg class="w-4 h-4 text-gray-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Качество до 720p
+            </li>
+            <li class="flex items-center gap-2">
+              <svg class="w-4 h-4 text-gray-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Лимит 1 сайт (из списка платформ)
+            </li>
+          </ul>
+          <button class="w-full mt-auto py-3 px-4 bg-gray-600 hover:bg-gray-500 text-white font-medium rounded-xl transition-colors text-sm">Попробовать</button>
+        </div>
+
         <!-- Посуточный -->
         <div class="flex flex-col h-full bg-[#1a1a1f] border border-gray-800 rounded-2xl p-6 hover:border-gray-700 transition-colors">
           <h3 class="text-lg font-semibold text-white mb-1">Посуточный</h3>
@@ -79,34 +104,14 @@
           <ul class="space-y-2 text-gray-400 text-sm flex-grow">
             <li class="flex items-center gap-2">
               <svg class="w-4 h-4 text-gray-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              Качество до 1080p
-            </li>
-            <li class="flex items-center gap-2">
-              <svg class="w-4 h-4 text-gray-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              2 сайта клиента
-            </li>
-          </ul>
-          <button class="w-full mt-auto py-3 px-4 bg-gray-600 hover:bg-gray-500 text-white font-medium rounded-xl transition-colors text-sm">Выбрать</button>
-        </div>
-
-        <!-- Пробный -->
-        <div class="flex flex-col h-full bg-[#1a1a1f] border border-gray-800 rounded-2xl p-6 hover:border-gray-700 transition-colors">
-          <h3 class="text-lg font-semibold mb-1" style="color: #FF4444;">Пробный</h3>
-          <div class="flex items-baseline gap-1 mb-4">
-            <span class="text-2xl font-bold text-white">0</span>
-            <span class="text-gray-400">₽ / 14 дней</span>
-          </div>
-          <ul class="space-y-2 text-gray-400 text-sm flex-grow">
-            <li class="flex items-center gap-2">
-              <svg class="w-4 h-4 text-gray-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
               Качество до 720p
             </li>
             <li class="flex items-center gap-2">
               <svg class="w-4 h-4 text-gray-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              2 сайта клиента
+              Лимит 1 сайт (с возможностью указать свой домен)
             </li>
           </ul>
-          <button class="w-full mt-auto py-3 px-4 bg-gray-600 hover:bg-gray-500 text-white font-medium rounded-xl transition-colors text-sm">Попробовать</button>
+          <button class="w-full mt-auto py-3 px-4 bg-gray-600 hover:bg-gray-500 text-white font-medium rounded-xl transition-colors text-sm">Выбрать</button>
         </div>
 
         <!-- 1 месяц -->
@@ -120,88 +125,36 @@
           <ul class="space-y-2 text-gray-400 text-sm flex-grow">
             <li class="flex items-center gap-2">
               <svg class="w-4 h-4 text-[#FF4444] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              Качество 4K HDR
+              Качество до 1080p
             </li>
             <li class="flex items-center gap-2">
               <svg class="w-4 h-4 text-[#FF4444] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              10 сайтов клиента
+              До 3 сайтов клиента
             </li>
           </ul>
           <button class="w-full mt-auto py-3 px-4 bg-[#FF4444] hover:bg-[#FF6B6B] text-white font-medium rounded-xl transition-colors text-sm">Выбрать</button>
         </div>
 
-        <!-- 3 месяца (ХИТ) -->
-        <div class="flex flex-col h-full bg-[#1a1a1f] border-2 border-[#FF4444] rounded-2xl p-6 relative hover:border-[#FF6B6B] transition-colors">
-          <span class="absolute -top-2.5 left-1/2 -translate-x-1/2 px-3 py-0.5 bg-[#FF4444] text-white text-xs font-bold rounded-full">ХИТ</span>
-          <h3 class="text-lg font-semibold text-white mb-1 mt-1">3 месяца</h3>
-          <div class="flex items-baseline gap-1 mb-1">
-            <span class="text-2xl font-bold text-white">249</span>
-            <span class="text-gray-400">₽</span>
-          </div>
-          <p class="text-xs text-[#FF4444] font-medium mb-4">Выгода 45%</p>
-          <ul class="space-y-2 text-gray-400 text-sm flex-grow">
-            <li class="flex items-center gap-2">
-              <svg class="w-4 h-4 text-[#FF4444] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              +5 пользователей
-            </li>
-            <li class="flex items-center gap-2">
-              <svg class="w-4 h-4 text-[#FF4444] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              Качество 4K HDR
-            </li>
-            <li class="flex items-center gap-2">
-              <svg class="w-4 h-4 text-[#FF4444] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              10 сайтов клиента
-            </li>
-          </ul>
-          <button class="w-full mt-auto py-3 px-4 bg-[#FF4444] hover:bg-[#FF6B6B] text-white font-medium rounded-xl transition-colors text-sm">Выбрать</button>
-        </div>
-
-        <!-- 6 месяцев -->
-        <div class="flex flex-col h-full bg-[#1a1a1f] border border-gray-800 rounded-2xl p-6 hover:border-gray-700 transition-colors">
-          <h3 class="text-lg font-semibold text-white mb-1">6 месяцев</h3>
-          <div class="flex items-baseline gap-1 mb-1">
-            <span class="text-2xl font-bold text-white">399</span>
-            <span class="text-gray-400">₽</span>
-          </div>
-          <p class="text-xs text-[#FF4444] font-medium mb-4">Выгода 55%</p>
-          <ul class="space-y-2 text-gray-400 text-sm flex-grow">
-            <li class="flex items-center gap-2">
-              <svg class="w-4 h-4 text-[#FF4444] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              +5 пользователей
-            </li>
-            <li class="flex items-center gap-2">
-              <svg class="w-4 h-4 text-[#FF4444] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              Качество 4K HDR
-            </li>
-            <li class="flex items-center gap-2">
-              <svg class="w-4 h-4 text-[#FF4444] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              10 сайтов клиента
-            </li>
-          </ul>
-          <button class="w-full mt-auto py-3 px-4 bg-[#FF4444] hover:bg-[#FF6B6B] text-white font-medium rounded-xl transition-colors text-sm">Выбрать</button>
-        </div>
-
-        <!-- 12 месяцев (MAX) -->
+        <!-- Premium 3/6/12 месяцев -->
         <div class="flex flex-col h-full bg-[#1a1a1f] border-2 border-indigo-500 rounded-2xl p-6 hover:border-indigo-400 transition-colors">
-          <h3 class="text-lg font-semibold text-white mb-1">12 месяцев</h3>
-          <span class="inline-flex self-start px-2 py-0.5 bg-indigo-500/20 text-indigo-400 text-xs font-bold rounded mb-2">MAX</span>
-          <div class="flex items-baseline gap-1 mb-1">
-            <span class="text-2xl font-bold text-white">699</span>
-            <span class="text-gray-400">₽</span>
+          <h3 class="text-lg font-semibold text-white mb-1">Premium 3/6/12 месяцев</h3>
+          <div class="space-y-1 text-sm text-gray-300 mb-3">
+            <p>3 мес — 249 ₽</p>
+            <p>6 мес — 399 ₽</p>
+            <p>12 мес — 699 ₽</p>
           </div>
-          <p class="text-xs text-indigo-400 font-medium mb-4">Выгода 62%</p>
           <ul class="space-y-2 text-gray-400 text-sm flex-grow">
             <li class="flex items-center gap-2">
               <svg class="w-4 h-4 text-indigo-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              +5 пользователей
+              Качество 4K HDR
             </li>
             <li class="flex items-center gap-2">
               <svg class="w-4 h-4 text-indigo-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              4K HDR
+              До 5 сайтов клиента
             </li>
             <li class="flex items-center gap-2">
               <svg class="w-4 h-4 text-indigo-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              VIP поддержка
+              Family Link: +1 дополнительный пользователь
             </li>
           </ul>
           <button class="w-full mt-auto py-3 px-4 bg-[#FF4444] hover:bg-[#FF6B6B] text-white font-medium rounded-xl transition-colors text-sm">Выбрать</button>
@@ -216,6 +169,10 @@
         <a href="personal-data.html" class="text-[#FF4444] hover:text-[#FF6B6B]">обработку персональных данных</a>.
       </p>
 
+      <p class="mt-3 text-[11px] text-gray-500 text-center max-w-3xl mx-auto leading-relaxed">
+        Под формулировкой «Лимит 1 сайт» понимается выбор одного конкретного сервиса (например, YouTube) или указание одного собственного домена, для которого будет включено ускорение и проксирование.
+      </p>
+
       <!-- Реферальная программа -->
       <div class="mt-16 rounded-2xl p-8 md:p-10" style="background-color: #1a1a1f;">
         <h3 class="text-xl font-semibold text-white text-center mb-4">Приглашайте друзей — пользуйтесь бесплатно!</h3>
@@ -227,6 +184,37 @@
           <button type="button" id="ref-copy-btn" onclick="copyRefLink()" class="px-6 py-3 bg-[#FF4444] hover:bg-[#FF6B6B] text-white font-medium rounded-xl transition-colors whitespace-nowrap">
             Копировать
           </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="user-dashboard" class="mt-24 md:mt-32 hidden">
+      <h2 class="text-2xl font-semibold text-center text-gray-300 mb-8">Ваш аккаунт</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="bg-[#1a1a1f] border border-gray-800 rounded-2xl p-6">
+          <h3 class="text-lg font-semibold text-white mb-4">Подписка</h3>
+          <div id="subscription-block" class="space-y-2 text-sm text-gray-300">
+            <p id="subscription-status">Вы не авторизованы.</p>
+          </div>
+          <div class="mt-4">
+            <button id="logout-btn" class="hidden inline-flex items-center px-4 py-2 rounded-xl bg-gray-700 hover:bg-gray-600 text-sm text-white font-medium transition-colors">
+              Выйти
+            </button>
+          </div>
+        </div>
+
+        <div class="bg-[#1a1a1f] border border-gray-800 rounded-2xl p-6">
+          <h3 class="text-lg font-semibold text-white mb-4">Домены ускорения</h3>
+          <p class="text-xs text-gray-400 mb-3" id="domains-hint">
+            Авторизуйтесь через Google, чтобы управлять списком доменов.
+          </p>
+          <div class="flex gap-2 mb-4">
+            <input id="new-domain-input" type="text" placeholder="Например, youtube.com" class="flex-1 px-3 py-2 rounded-xl bg-[#121214] border border-gray-700 text-sm text-gray-200 focus:outline-none focus:ring-2 focus:ring-[#FF4444]/60" />
+            <button id="add-domain-btn" class="px-4 py-2 rounded-xl bg-[#FF4444] hover:bg-[#FF6B6B] text-sm text-white font-medium transition-colors">
+              Добавить
+            </button>
+          </div>
+          <ul id="domain-list" class="space-y-2 text-sm text-gray-200"></ul>
         </div>
       </div>
     </section>
@@ -279,12 +267,155 @@
 
     (function () {
       var downloadBtn = document.getElementById('download-btn');
-      if (!downloadBtn) return;
-      downloadBtn.addEventListener('click', function () {
-        setTimeout(function () {
-          window.location.href = 'instruction.html';
-        }, 1500);
-      });
+      if (downloadBtn) {
+        downloadBtn.addEventListener('click', function () {
+          setTimeout(function () {
+            window.location.href = 'instruction.html';
+          }, 1500);
+        });
+      }
+
+      var loginBtn = document.getElementById('login-btn');
+      if (loginBtn) {
+        loginBtn.addEventListener('click', function () {
+          window.location.href = '/auth/google';
+        });
+      }
+
+      var logoutBtn = document.getElementById('logout-btn');
+      var dashboardSection = document.getElementById('user-dashboard');
+      var subscriptionBlock = document.getElementById('subscription-block');
+      var subscriptionStatus = document.getElementById('subscription-status');
+      var domainsHint = document.getElementById('domains-hint');
+      var domainList = document.getElementById('domain-list');
+      var addDomainBtn = document.getElementById('add-domain-btn');
+      var newDomainInput = document.getElementById('new-domain-input');
+
+      function renderDomains(domains) {
+        if (!domainList) return;
+        domainList.innerHTML = '';
+        domains.forEach(function (item) {
+          var li = document.createElement('li');
+          li.className = 'flex items-center justify-between gap-2 bg-[#121214] border border-gray-800 rounded-xl px-3 py-2';
+          var span = document.createElement('span');
+          span.textContent = item.domain;
+          var btn = document.createElement('button');
+          btn.textContent = 'Удалить';
+          btn.className = 'text-xs text-gray-400 hover:text-[#FF4444] transition-colors';
+          btn.addEventListener('click', function () {
+            fetch('/api/domains/' + item.id, {
+              method: 'DELETE',
+              credentials: 'include'
+            }).then(function (res) {
+              if (res.ok) {
+                loadDomains();
+              }
+            });
+          });
+          li.appendChild(span);
+          li.appendChild(btn);
+          domainList.appendChild(li);
+        });
+      }
+
+      function loadDomains() {
+        fetch('/api/domains', { credentials: 'include' })
+          .then(function (res) {
+            if (!res.ok) return [];
+            return res.json();
+          })
+          .then(function (data) {
+            if (!data || !data.domains) return;
+            renderDomains(data.domains);
+          });
+      }
+
+      function initDashboard() {
+        fetch('/api/me', { credentials: 'include' })
+          .then(function (res) { return res.json(); })
+          .then(function (data) {
+            if (!data || !data.user) {
+              if (dashboardSection) {
+                dashboardSection.classList.add('hidden');
+              }
+              return;
+            }
+
+            if (dashboardSection) {
+              dashboardSection.classList.remove('hidden');
+            }
+
+            if (logoutBtn) {
+              logoutBtn.classList.remove('hidden');
+              logoutBtn.addEventListener('click', function () {
+                fetch('/logout', {
+                  method: 'POST',
+                  credentials: 'include'
+                }).then(function () {
+                  window.location.reload();
+                });
+              });
+            }
+
+            if (subscriptionBlock && subscriptionStatus) {
+              subscriptionBlock.innerHTML = '';
+              var nameP = document.createElement('p');
+              nameP.textContent = 'Аккаунт: ' + (data.user.email || '');
+              nameP.className = 'text-sm text-gray-200';
+              subscriptionBlock.appendChild(nameP);
+
+              if (data.subscription) {
+                var tierP = document.createElement('p');
+                tierP.textContent = 'Тариф: ' + data.subscription.planName;
+                subscriptionBlock.appendChild(tierP);
+
+                var qualityP = document.createElement('p');
+                qualityP.textContent = 'Качество: ' + data.subscription.maxQuality;
+                subscriptionBlock.appendChild(qualityP);
+
+                var limitP = document.createElement('p');
+                limitP.textContent = 'Лимит доменов: ' + data.subscription.maxDomains;
+                subscriptionBlock.appendChild(limitP);
+
+                if (data.subscription.endAt) {
+                  var endDate = new Date(data.subscription.endAt);
+                  var endP = document.createElement('p');
+                  endP.textContent = 'Действует до: ' + endDate.toLocaleDateString();
+                  subscriptionBlock.appendChild(endP);
+                }
+              } else {
+                subscriptionStatus.textContent = 'У вас пока нет активной подписки.';
+                subscriptionBlock.appendChild(subscriptionStatus);
+              }
+            }
+
+            if (domainsHint) {
+              domainsHint.textContent = 'Добавляйте и удаляйте домены в пределах вашего лимита.';
+            }
+
+            loadDomains();
+          });
+      }
+
+      if (addDomainBtn && newDomainInput) {
+        addDomainBtn.addEventListener('click', function () {
+          var value = newDomainInput.value.trim();
+          if (!value) return;
+          fetch('/api/domains', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            credentials: 'include',
+            body: JSON.stringify({ domain: value })
+          })
+            .then(function (res) { return res.json(); })
+            .then(function () {
+              newDomainInput.value = '';
+              loadDomains();
+            });
+        });
+      }
+
+      initDashboard();
     })();
   </script>
 </body>

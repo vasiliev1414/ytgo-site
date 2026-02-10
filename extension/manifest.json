@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "YTGO Proxy",
+  "version": "1.0.0",
+  "description": "Проксирование только разрешённых доменов через YTGO.",
+  "permissions": [
+    "proxy",
+    "storage",
+    "webRequest",
+    "webRequestBlocking"
+  ],
+  "host_permissions": [
+    "<all_urls>",
+    "https://ytgo.su/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
