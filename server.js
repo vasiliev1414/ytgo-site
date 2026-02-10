@@ -10,13 +10,24 @@ require("dotenv").config()
 
 const app = express()
 
-const dbPool = new Pool({
-  host: process.env.POSTGRES_HOST || "localhost",
-  port: Number(process.env.POSTGRES_PORT || 5432),
-  database: process.env.POSTGRES_DB || "ytgo",
-  user: process.env.POSTGRES_USER || "ytgo",
-  password: process.env.POSTGRES_PASSWORD || "ytgo_password"
-})
+let dbPool
+
+if (process.env.DATABASE_URL) {
+  console.log("Connecting to DB via DATABASE_URL")
+  dbPool = new Pool({
+    connectionString: process.env.DATABASE_URL
+  })
+} else {
+  const effectiveHost = process.env.POSTGRES_HOST || "db"
+  console.log("Connecting to DB at:", effectiveHost)
+  dbPool = new Pool({
+    host: effectiveHost,
+    port: Number(process.env.POSTGRES_PORT || 5432),
+    database: process.env.POSTGRES_DB || "ytgo",
+    user: process.env.POSTGRES_USER || "ytgo",
+    password: process.env.POSTGRES_PASSWORD || "ytgo_password"
+  })
+}
 
 const PLAN_DEFS = [
   {
@@ -228,10 +239,14 @@ function normalizeDomain(input) {
   return domain
 }
 
-initDb().catch((err) => {
-  console.error("Failed to initialize database", err)
-  process.exit(1)
-})
+initDb()
+  .then(() => {
+    console.log("Database initialized")
+  })
+  .catch((err) => {
+    console.error("Failed to initialize database", err)
+    process.exit(1)
+  })
 
 app.use(
   cors({
@@ -835,4 +850,3 @@ const port = Number(process.env.PORT || 3000)
 app.listen(port, () => {
   console.log(`YTGO backend listening on port ${port}`)
 })
-
