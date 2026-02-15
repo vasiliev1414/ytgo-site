@@ -1,0 +1,97 @@
+services:
+  remnawave-db:
+    image: postgres:17
+    container_name: remnawave-db
+    environment:
+      - POSTGRES_USER=${REMNAWAVE_DB_USER}
+      - POSTGRES_PASSWORD=${REMNAWAVE_DB_PASSWORD}
+      - POSTGRES_DB=${REMNAWAVE_DB_NAME}
+    volumes:
+      - remnawave-db-data:/var/lib/postgresql/data
+    networks:
+      - dokploy-network
+    restart: unless-stopped
+
+  remnawave-redis:
+    image: redis:7-alpine
+    container_name: remnawave-redis
+    command: ["redis-server", "--appendonly", "yes"]
+    volumes:
+      - remnawave-redis-data:/data
+    networks:
+      - dokploy-network
+    restart: unless-stopped
+
+  remnawave:
+    image: remnawave/backend:latest
+    container_name: remnawave
+    environment:
+      - APP_PORT=8080
+      - DATABASE_URL=${REMNAWAVE_DATABASE_URL}
+      - JWT_AUTH_SECRET=${REMNAWAVE_JWT_AUTH_SECRET}
+      - JWT_API_TOKENS_SECRET=${REMNAWAVE_JWT_API_TOKENS_SECRET}
+      - FRONT_END_DOMAIN=${REMNAWAVE_FRONTEND_DOMAIN}
+      - SUB_PUBLIC_DOMAIN=${REMNAWAVE_SUB_PUBLIC_DOMAIN}
+      - SUPERADMIN_USERNAME=${REMNAWAVE_SUPERADMIN_USERNAME}
+      - SUPERADMIN_PASSWORD=${REMNAWAVE_SUPERADMIN_PASSWORD}
+      - IS_DOCS_ENABLED=false
+    depends_on:
+      - remnawave-db
+      - remnawave-redis
+    networks:
+      - dokploy-network
+    restart: unless-stopped
+
+  remnawave-node:
+    image: remnawave/node:latest
+    container_name: remnawave-node
+    environment:
+      - NODE_PORT=${REMNANODE_PORT}
+      - SECRET_KEY=${REMNANODE_SECRET_KEY}
+    networks:
+      - dokploy-network
+    restart: unless-stopped
+
+  xatab-db:
+    image: postgres:16-alpine
+    container_name: xatab-db
+    environment:
+      - POSTGRES_DB=${XATAB_DB_NAME}
+      - POSTGRES_USER=${XATAB_DB_USER}
+      - POSTGRES_PASSWORD=${XATAB_DB_PASSWORD}
+    volumes:
+      - xatab-db-data:/var/lib/postgresql/data
+    networks:
+      - dokploy-network
+    restart: unless-stopped
+
+  xatabchik-bot:
+    build:
+      context: .
+      dockerfile: ./xatabchik/Dockerfile
+    container_name: xatabchik-bot
+    environment:
+      - TELEGRAM_BOT_TOKEN=${XATAB_TG_BOT_TOKEN}
+      - TELEGRAM_ADMIN_ID=${XATAB_TG_ADMIN_ID}
+      - DB_HOST=xatab-db
+      - DB_PORT=5432
+      - DB_NAME=${XATAB_DB_NAME}
+      - DB_USER=${XATAB_DB_USER}
+      - DB_PASSWORD=${XATAB_DB_PASSWORD}
+      - REMNAWAVE_API_URL=http://remnawave:8080/api
+      - REMNAWAVE_API_KEY=${REMNAWAVE_API_KEY}
+    depends_on:
+      - xatab-db
+      - remnawave
+    networks:
+      - dokploy-network
+    restart: unless-stopped
+
+networks:
+  dokploy-network:
+    external: true
+
+volumes:
+  remnawave-db-data:
+  remnawave-redis-data:
+  xatab-db-data:
