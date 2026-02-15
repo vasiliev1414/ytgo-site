@@ -67,8 +67,8 @@ services:
 
   xatabchik-bot:
     build:
-      context: .
-      dockerfile: ./xatabchik/Dockerfile
+      context: ..
+      dockerfile: ../xatabchik/Dockerfile
     container_name: xatabchik-bot
     environment:
       - TELEGRAM_BOT_TOKEN=${XATAB_TG_BOT_TOKEN}
